@@ -1,0 +1,10 @@
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/dae67631234507.564a1d230a290.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: 1;
+}

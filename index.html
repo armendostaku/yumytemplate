@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+<title>SITENAME</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="design.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="photos.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="price.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="loader.css" media="screen" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Abel', sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+}
+</style>
+ <!-- Page loader Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
+<!-- End of scripts -->
+<body>
+  <!-- Page loader -->
+<div class="loader"></div>
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-teal" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#ourstaff" onclick="w3_close()" class="w3-bar-item w3-button">Staff</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-white">Reserve</button></div>
+    <div class="w3-center w3-padding-16 w3-animate-zoom">LOGO</div>
+  </div>
+</div>
+  
+
+<!--- Contact --->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-teal">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1 class="w3-animate-zoom ">Reserve</h1>
+    </div>
+    <div class="w3-container">
+      <p class="w3-animate-zoom">Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value=""></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button w3-teal" type="submit">RESERVE NOW</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+
+  <!--MENU1-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+<div class="box">
+      <img  src="srcfood/food.jpg" alt="Sandwich" class="photos">
+      <h3 class="bottom w3-animate-left">10$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+ </div>
+
+
+
+    <div class="w3-quarter">
+      <div class="box">
+      <img src="srcfood/food.jpg" alt="Steak" class="photos">
+       <h3 class="bottom w3-animate-left">22$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+       <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+    </div>
+
+
+    <div class="w3-quarter">
+       <div class="box">
+      <img src="srcfood/food.jpg" alt="Cherries" class="photos">
+       <h3 class="bottom w3-animate-left">14$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+       <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="box">
+      <img src="srcfood/food.jpg" alt="Pasta and Wine" class="photos">
+      <h3 class="bottom w3-animate-left">24$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+  </div>
+  
+  <!--MENU2-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <div class="box">
+      <img src="srcfood/food.jpg" alt="Popsicle" class="photos">
+      <h3 class="bottom w3-animate-left">30$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+           <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="box">
+      <img src="srcfood/food.jpg" alt="Salmon" class="photos">
+      <h3 class="bottom w3-animate-left">42$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+           <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+    </div>
+
+
+    <div class="w3-quarter">
+      <div class="box">
+      <img src="srcfood/food.jpg" alt="Sandwich" class="photos">
+      <h3 class="bottom w3-animate-left">7$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+           <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="box">
+      <img src="srcfood/food.jpg" alt="Croissant" class="photos">
+      <h3 class="bottom w3-animate-left">5.2$</h3>
+</div>
+      <h3>Food Name</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Ingridients</button>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Ingridients</h2>
+      </header>
+      <div class="w3-container">
+     <ul class="w3-ul">
+       <li>Text1</li>
+         <li>Text2</li>
+        <li>Text3</li>
+     </ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Food name</p>
+      </footer>
+    </div>
+  </div>
+  </div>
+
+ 
+  <hr id="about">
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h2 class="w3-animate-zoom">About The Chef Man</h2><br>
+    <div class="container">
+    <img src="srcfood/chef1.jpg" alt="Me" class="w3-image" class="chefphoto" width="600" height="333">
+     <div class="overlay">
+    <div class="text">Chef Name</div>
+  </div>
+</div>
+    <div class="w3-padding-32">
+      <h4><b>Your title!</b></h4>
+      <h6><i>your slogan</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+
+   <!-- Our Staff -->
+   <hr id="ourstaff">
+   <h2 class="w3-animate-zoom w3-center">Staff</h2><br>
+    <div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff1.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">JOHN DOE</h2>
+  </div>
+</div>
+</div>
+</div>
+  <div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff3.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">AHMED DOE</h2>
+  </div>
+</div>
+</div>
+</div>
+  <div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff3.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">NICOLAS DOE</h2>
+  </div>
+</div>
+</div>
+</div>
+  <div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff2.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">SMITH DOE</h2>
+  </div>
+</div>
+</div>
+</div><br>
+<div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff1.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">JOHN DOE</h2>
+  </div>
+</div>
+</div>
+</div>
+  <div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff3.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">AHMED DOE</h2>
+  </div>
+</div>
+</div>
+</div>
+  <div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff3.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">NICOLAS DOE</h2>
+  </div>
+</div>
+</div>
+</div>
+  <div class="w3-quarter">
+   <div class="w3-container">
+   <div class="w3-card-4 w3-center " style="width: 100%">
+  <img src="srcfood/staff2.jpg" alt="staff" style="width: 100%;">
+  <div class="w3-container w3-center">
+    <h2 style="color: teal;">SMITH DOE</h2>
+  </div>
+</div>
+</div>
+</div>
+<!--Receipt of the week-->
+<hr id="week">
+  <div class="w3-container w3-center">  
+    <h2 class="w3-animate-zoom">Recipe of the week</h2><br>
+    <div class="w3-half w3-center">
+      <img src="srcfood/lasagna.jpg" style="width: 80%;border-radius: 5%">
+    </div>
+    <div class="w3-half w3-center">
+      <h2>Lasagna</h2>
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-light-grey w3-hover-white">
+            <th>Ingridients</th>
+          </tr>
+          </thead>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>1 pound sweet Italian sausage</td>
+         </tr>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>3/4 pound lean ground beef</td>
+         </tr>
+           <tr class="w3-light-grey w3-hover-teal">
+          <td>1/2 cup minced onion</td>
+         </tr>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>2 cloves garlic, crushed</td>
+         </tr>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>1 (28 ounce) can crushed tomatoes</td>
+         </tr>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>2 (6 ounce) cans tomato paste</td>
+         </tr>
+           <tr class="w3-light-grey w3-hover-teal">
+          <td>2 (6 ounce) cans tomato paste</td>
+         </tr>
+           <tr class="w3-light-grey w3-hover-teal">
+          <td>2 (6.5 ounce) cans canned tomato sauce</td>
+         </tr>
+           <tr class="w3-light-grey w3-hover-teal">
+          <td>1/2 cup water</td>
+         </tr>
+           <tr class="w3-light-grey w3-hover-teal">
+          <td>2 tablespoons white sugar</td>
+         </tr>
+           <tr class="w3-light-grey w3-hover-teal">
+          <td>1 1/2 teaspoons dried basil leaves</td>
+         </tr>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>1/2 teaspoon fennel seeds</td>
+         </tr>
+        <tr class="w3-light-grey w3-hover-teal">
+          <td>1 teaspoon Italian seasoning</td>
+         </tr>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>1 1/2 teaspoons salt, divided, or to taste</td>
+         </tr>
+         <tr class="w3-light-grey w3-hover-teal">
+          <td>1/4 teaspoon ground black pepper</td>
+         </tr>
+      </table>
+    </div>
+  <!-- FooterMap-->
+  <footer class="w3-row-padding w3-padding-16">
+    <div class="w3-third">
+
+      <h3>Adress:</h3>
+    <p >monday - friday 10-23 | saturday 14-02</p>
+    <p >42 village St, Berlin</p>
+
+
+    </div>
+  
+    <div class="w3-third">
+      <h3>Instagram:</h3>
+      <h3>@chefchef</h3>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>Phone number:</h3>
+      <p>
+       <h3>+000 000 00 000</h3>
+    </div>
+  </footer>
+
+<!-- End page content -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="https://maps.google.com/maps/api/js"></script>
+</body>
+</html>

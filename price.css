@@ -1,0 +1,23 @@
+.box{
+  position: relative;
+  overflow: hidden;
+  color: white;
+  border-radius: 10px;
+}
+.box img{
+  width: 100%;
+}
+
+.bottom,
+.right{
+  margin:1em;
+  position:absolute;
+}
+.bottom{
+  bottom: 0px;
+
+}
+.right{
+  right: 0px;
+  top: 0px;
+}
